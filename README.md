@@ -10,43 +10,36 @@ A lightweight static web app to practice key data management and governance conc
 - Session streak and best-streak tracking
 - Domain-level performance table (answered, correct, accuracy)
 - Browser-only persistence with `localStorage`
-- Node.js server foundation for future API and database-backed progress
+- Next.js App Router foundation for future API and database-backed progress
 
 ## Run locally
 
-Install dependencies and start the Node.js server:
+Install dependencies and start the Next.js development server:
 
 ```bash
 npm install
-npm start
+npm run dev
 ```
 
 Then open `http://localhost:3000`.
 
-For development with automatic restarts:
+Build the production app:
 
 ```bash
-npm run dev
+npm run build
 ```
 
-You can override the bind address and port with environment variables:
+Run the production build:
 
 ```bash
-PORT=4000 HOST=127.0.0.1 npm start
+npm start
 ```
 
 Progress is still stored only in the browser with `localStorage`. No database or database driver has been added yet.
 
-## Deploy to GitHub Pages
+## Deploy
 
-1. Push this repository to GitHub.
-2. Open your repository and go to **Settings → Pages**.
-3. Under **Build and deployment**, choose:
-   - **Source:** Deploy from a branch
-   - **Branch:** `main` (or default branch) and folder `/ (root)`
-4. Save and wait for the Pages URL.
-
-The app can still be served statically, but the primary local runtime is now Node.js.
+This app now runs as a Next.js application. Deploy it to a platform that supports Next.js, or add an export configuration later if you decide you need fully static hosting.
 
 ## Recommended next steps for CDMP prep
 

@@ -41,7 +41,7 @@ header {
 .card {
   background: var(--card);
   border: 1px solid var(--border);
-  border-radius: 12px;
+  border-radius: 8px;
   padding: 1rem;
   box-shadow: 0 6px 16px rgba(16, 24, 40, 0.06);
 }
@@ -94,7 +94,7 @@ button {
 .question-card {
   background: #f8fbff;
   border: 1px solid #c8defc;
-  border-radius: 10px;
+  border-radius: 8px;
   padding: 0.9rem;
   min-height: 100px;
 }
